@@ -1,0 +1,82 @@
+const getters = {
+  //comment
+  currentCommentHotelId: state=>state.comment.currentCommentHotelId,
+  comments:state =>state.comment.comments,
+  activeComment: state => state.comment.activeComment,
+  addText:state => state.comment.addText,
+  showText:state => state.comment.showText,
+  //coupon
+  salesCouponList: state => state.coupon.salesCouponList,
+  orderMatchCouponList: state => state.coupon.orderMatchCouponList,
+  couponList: state => state.coupon.couponList,
+  couponVisible: state => state.coupon.couponVisible,
+  addCouponVisible: state => state.coupon.addCouponVisible,
+  selectCouponVisible: state => state.coupon.selectCouponVisible,
+  currentCoupon: state => state.coupon.currentCoupon,
+  activeCouponHotelId:state=>state.coupon.activeCouponHotelId,
+  //credit
+  addCreditVisible: state => state.credit.addCreditVisible,
+
+  userCreditList: state=>state.credit.userCreditList,
+  //enterprise
+  enterpriseList: state => state.enterprise.enterpriseList,
+  addEnterpriseVisible: state => state.enterprise.addEnterpriseVisible,
+  //hotel
+  searchHotel:state => state.hotel.searchHotel,
+  allHotelData: state => state.hotel.allHotelData,
+  hotelListLoading: state => state.hotel.hotelListLoading,
+  hotelList: state => state.hotel.hotelList,
+  currentHotelInfo: state => state.hotel.currentHotelInfo,
+  currentHotelId: state => state.hotel.currentHotelId,
+  activeHotelId: state => state.hotel.activeHotelId,
+  currentMangerId: state => state.hotel.currentMangerId,
+  addHotelModalVisible: state => state.hotel.addHotelModalVisible,
+
+  updateHotelVisible: state=>state.hotel.updateHotelVisible,
+  setManagerVisible: state => state.hotel.setManagerVisible,
+
+  updateHotelInfo:state=>state.hotel.updateHotelInfo,
+  //order
+  orderList: state => state.order.orderList,
+  orderModalVisible: state => state.order.orderModalVisible,
+  currentOrderRoom: state => state.order.currentOrderRoom,
+  userOrderList: state => state.order.userOrderList,
+  activeOrderId:state=> state.order.activeOrderId,
+  activeOrderData:state=>state.order.activeOrderData,
+  orderVisible: state=>state.order.orderVisible,
+  totalPrice: state => state.order.totalPrice,
+  finalPrice: state => state.order.finalPrice,
+  abnormalOrderList: state => state.order.abnormalOrderList,
+  //room
+  activeRoomList: state=> state.room.activeRoomList,
+  activeRoomHotelId:state=>state.room.activeRoomHotelId,
+  addRoomModalVisible: state => state.room.addRoomModalVisible,
+  activeRooms: state => state.room.activeRooms,
+  roomVisible: state => state.room.roomVisible,
+  deleteRoomVisible: state => state.room.deleteRoomVisible,
+  deleteRoomNumVisible:state => state.room.deleteRoomNumVisible,
+  //user
+  token: state => state.user.token,
+  email: state =>state.user.email,
+  userId: state => state.user.userId,
+  userType: state => state.user.userType,
+  memberLevel: state=> state.user.memberLevel,
+  birthday: state => state.user.birthday,
+  userInfo: state => state.user.userInfo,
+  registerVisible: state=>state.user.registerVisible,
+  registerVIP: state=>state.user.registerVIP,
+  managerList: state => state.user.managerList,
+  clientList: state => state.user.clientList,
+  saleList: state => state.user.saleList,
+  addManagerModalVisible: state => state.user.addManagerModalVisible,
+  addClientVisible: state => state.user.addClientVisible,
+  updateClientVisible: state => state.user.updateClientVisible,
+  updateManagerVisible: state => state.user.updateManagerVisible,
+  addSaleVisible:state => state.user.addSaleVisible,
+  activeUserId: state => state.user.activeUserId,
+  activeUserInfo: state=>state.user.activeUserInfo,
+  activeManagerInfo: state=>state.user.activeManagerInfo,
+  activeManagerId: state=> state.user.activeManagerId,
+}
+  
+  export default getters
